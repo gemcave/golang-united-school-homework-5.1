@@ -1,3 +1,3 @@
-module github.com/gemcave/golang-united-school-homework-5.1
+module square
 
 go 1.18
