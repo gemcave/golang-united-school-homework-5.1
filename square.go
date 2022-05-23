@@ -8,23 +8,21 @@ type Point struct {
 
 type Square struct {
 	start Point
-	side  uint
+	a     uint
 }
 
 func (s *Square) End() Point {
-	// implement me
-
 	var endPoint Point
-	endPoint.x = s.start.x + int(s.side)
-	endPoint.y = s.start.y + int(s.side)
+	endPoint.x = s.start.x + int(s.a)
+	endPoint.y = s.start.y + int(s.a)
 
 	return endPoint
 
 }
 
 func (s *Square) Area() uint {
-	return uint(math.Pow(float64(s.side), 2))
+	return uint(math.Pow(float64(s.a), 2))
 }
 func (s *Square) Perimeter() uint {
-	return s.side * 4
+	return s.a * 4
 }
